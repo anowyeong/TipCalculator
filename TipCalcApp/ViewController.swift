@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  TipCalcApp
-//
-//  Created by Anthony Owyeong on 1/30/19.
-//  Copyright © 2019 Anthony Owyeong. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -16,6 +8,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalAfterSplitLbl: UILabel!
     @IBOutlet weak var numAfterSplitLbl: UILabel!
     @IBOutlet weak var tipAmountLbl: UILabel!
+    
     @IBAction func OnTap(_ sender: Any) {
         //exit keyboard
         view.endEditing(true)
@@ -26,11 +19,12 @@ class ViewController: UIViewController {
         //Display number of people to split amongst
         let numOfPpl: Int = Int(amountSlider.value)
         numAfterSplitLbl.text = String(format:"Split: %d", numOfPpl)
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     @IBAction func CalculateTip(_ sender: Any) {
+        
         //Display number of people to split amongst and recall CalculateTip
         let numOfPpl: Int = Int(amountSlider.value)
         numAfterSplitLbl.text = String(format:"Split: %d", numOfPpl)
@@ -47,7 +41,6 @@ class ViewController: UIViewController {
         
         //calculating Total After Splitting:
         let splitbill = total / Double(numOfPpl)
-        
         totalAfterSplitLbl.text = String(format: "$%.2f", splitbill)
     }
     
