@@ -15,8 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalAmtLbl: UILabel!
     @IBOutlet weak var totalAfterSplitLbl: UILabel!
     @IBOutlet weak var numAfterSplitLbl: UILabel!
-   
-    
+    @IBOutlet weak var tipAmountLbl: UILabel!
     @IBAction func OnTap(_ sender: Any) {
         //exit keyboard
         view.endEditing(true)
@@ -41,6 +40,8 @@ class ViewController: UIViewController {
         let taxPercentages = [0.15, 0.20, 0.22]
         
         let tip = bill * taxPercentages[taxAmount.selectedSegmentIndex]
+        tipAmountLbl.text = String(format: "Tip Amount: $%.2f",tip)
+        
         let total = bill + tip
         totalAmtLbl.text = String (format: "$%.2f", total)
         

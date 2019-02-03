@@ -1,8 +1,6 @@
-# TipCalculator
-
 # Pre-work - Tip Calculator
 
-Tip Calculator is a tip calculator application for iOS.
+TipCalculator is a tip calculator application for iOS.
 
 Submitted by: Anthony Owyeong
 
@@ -24,26 +22,16 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-- [ ] A Slider which allows to split the bill between up to 10 people
 
+## Video Walkthrough 
 
-## Notes 
+Here's a walkthrough of implemented user stories:
 
-Some challenges encountered while building this app is the apply and using the sliders and segmented controls.
+<img src='http://g.recordit.co/JiTkRtIT4V.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
 
-## License
+GIF created with recordit.co
 
-    Copyright [2019] [Anthony Owyeong]
+## Notes
+Some challenges encountered while building this app were getting familiar with sliders and segment controls. Another challenge was creating layout constraints and getting use to storyboards.
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
 
